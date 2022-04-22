@@ -3,11 +3,11 @@
 Installing Py4J
 ===============
 
-Installing Python 2.7 or 3.4-3.9
---------------------------------
+Installing Python 2.7 or 3.4-3.10
+---------------------------------
 
 Py4J is a library written in Python and Java. Currently, Py4J has been tested
-with Python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, and 3.9. You can install Python by going to the
+with Python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9 and 3.10. You can install Python by going to the
 `official Python download page <http://www.python.org/download/>`_.
 
 
@@ -105,4 +105,4 @@ Maven install
 2. Go to the py4j-java directory and execute ``mvn install``.
 3. Alternatively, if a test fails (possible because of sockets), execute
    ``mvn -Dmaven.test.skip=true install``
-4. Builded binaries will be in the directory ``target/py4j-0.x.jar``.
+4. Built binaries will be in the directory ``target/py4j-0.x.jar``.
