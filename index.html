@@ -124,21 +124,21 @@ generated and no tool was required to run these programs). The
 previous code snippet. Note that the Java program must be started before
 executing the Python code above. In other words, the Py4J does not start a
 JVM.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">py4j.GatewayServer</span><span class="p">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">py4j.GatewayServer</span><span class="p">;</span><span class="w"></span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AdditionApplication</span> <span class="p">{</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">AdditionApplication</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
-  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">addition</span><span class="p">(</span><span class="kt">int</span> <span class="n">first</span><span class="p">,</span> <span class="kt">int</span> <span class="n">second</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">first</span> <span class="o">+</span> <span class="n">second</span><span class="p">;</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">addition</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">first</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">second</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">second</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">AdditionApplication</span> <span class="n">app</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AdditionApplication</span><span class="p">();</span>
-    <span class="c1">// app is now the gateway.entry_point</span>
-    <span class="n">GatewayServer</span> <span class="n">server</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GatewayServer</span><span class="p">(</span><span class="n">app</span><span class="p">);</span>
-    <span class="n">server</span><span class="p">.</span><span class="na">start</span><span class="p">();</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">AdditionApplication</span><span class="w"> </span><span class="n">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AdditionApplication</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// app is now the gateway.entry_point</span><span class="w"></span>
+<span class="w">    </span><span class="n">GatewayServer</span><span class="w"> </span><span class="n">server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">GatewayServer</span><span class="p">(</span><span class="n">app</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">server</span><span class="p">.</span><span class="na">start</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -154,6 +154,10 @@ JVM.</p>
 <section id="news">
 <h1>News<a class="headerlink" href="#news" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
+<li><p><strong>August 12th 2022</strong> - Py4J 0.10.9.7 has been released. See the
+<a class="reference internal" href="changelog.html"><span class="doc">Changelog</span></a> for more details about the bug fixes and new features.</p></li>
+<li><p><strong>August 11th 2022</strong> - Py4J 0.10.9.6 has been released. See the
+<a class="reference internal" href="changelog.html"><span class="doc">Changelog</span></a> for more details about the bug fixes and new features.</p></li>
 <li><p><strong>March 18th 2022</strong> - Py4J 0.10.9.5 has been released. See the
 <a class="reference internal" href="changelog.html"><span class="doc">Changelog</span></a> for more details about the bug fixes and new features.</p></li>
 <li><p><strong>March 16th 2022</strong> - Py4J 0.10.9.4 has been released. See the
